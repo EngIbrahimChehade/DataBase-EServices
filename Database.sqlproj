@@ -96,7 +96,6 @@
     <Build Include="dbo\Stored Procedures\UserStatus\UserStatus-Get.sql" />
     <Build Include="dbo\Stored Procedures\UserStatus\UserStatus-GetById.sql" />
     <Build Include="dbo\Stored Procedures\UserStatus\UserStatus-Insert.sql" />
-    <Build Include="dbo\Stored Procedures\Users-Roles\Roles-Delete.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Script.PostDeployment.sql" />
