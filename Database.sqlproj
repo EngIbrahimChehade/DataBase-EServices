@@ -63,6 +63,10 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\SeedData" />
     <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="dbo\Stored Procedures\Roles" />
+    <Folder Include="dbo\Stored Procedures\Users" />
+    <Folder Include="dbo\Stored Procedures\Users-Roles" />
+    <Folder Include="dbo\Stored Procedures\UserStatus" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Roles.sql" />
@@ -74,6 +78,25 @@
     <Build Include="dbo\Tables\Users.sql" />
     <Build Include="dbo\Tables\Users-Roles.sql" />
     <None Include="dbo\SeedData\Users-RolesSeedData.sql" />
+    <Build Include="dbo\Stored Procedures\Roles\Roles-Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Roles\Roles-Get.sql" />
+    <Build Include="dbo\Stored Procedures\Roles\Roles-GetById.sql" />
+    <Build Include="dbo\Stored Procedures\Roles\Roles-Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Users\Users-Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Users\Users-Get.sql" />
+    <Build Include="dbo\Stored Procedures\Users\Users-GetById.sql" />
+    <Build Include="dbo\Stored Procedures\Users\Users-Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Users\Users-Login.sql" />
+    <Build Include="dbo\Stored Procedures\Users\Users-Search.sql" />
+    <Build Include="dbo\Stored Procedures\Users\Users-Update.sql" />
+    <Build Include="dbo\Stored Procedures\Users-Roles\Users-Roles-GetRolesByUserId.sql" />
+    <Build Include="dbo\Stored Procedures\Users-Roles\Users-Roles-Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Users\Users-GetByUserName.sql" />
+    <Build Include="dbo\Stored Procedures\UserStatus\UserStatus-Delete.sql" />
+    <Build Include="dbo\Stored Procedures\UserStatus\UserStatus-Get.sql" />
+    <Build Include="dbo\Stored Procedures\UserStatus\UserStatus-GetById.sql" />
+    <Build Include="dbo\Stored Procedures\UserStatus\UserStatus-Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Users-Roles\Roles-Delete.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Script.PostDeployment.sql" />

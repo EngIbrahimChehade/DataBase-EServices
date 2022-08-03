@@ -10,7 +10,7 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-:r .\SeedData\RolesSeedData.sql
-:r .\SeedData\UserStatusSeedData.sql
-:r .\SeedData\UsersSeedData.sql
-:r .\SeedData\Users-RolesSeedData.sql
+--:r .\SeedData\RolesSeedData.sql
+--:r .\SeedData\UserStatusSeedData.sql
+--:r .\SeedData\UsersSeedData.sql
+--:r .\SeedData\Users-RolesSeedData.sql

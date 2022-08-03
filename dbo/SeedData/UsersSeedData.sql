@@ -1,7 +1,7 @@
 ﻿--Clear values
-Delete from [dbo].[Users] 
-DBCC CHECKIDENT ('[dbo].[Users]', RESEED, -1);
-GO
+--Delete from [dbo].[Users] 
+--DBCC CHECKIDENT ('[dbo].[Users]', RESEED, -1);
+--GO
 
 --Start insert seed data
 INSERT INTO [dbo].[Users] ([UserName], [Password], [MobileNumber], [Email], [CreatedDate], [UserStatusId])
