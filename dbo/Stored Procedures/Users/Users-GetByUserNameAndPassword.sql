@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[Users-Login]
+﻿CREATE PROCEDURE [dbo].[Users-GetByUserNameAndPassword]
 	@UserName VarChar(50),
 	@Password VarChar(50)
 AS

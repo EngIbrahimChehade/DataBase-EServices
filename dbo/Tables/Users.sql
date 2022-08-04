@@ -5,6 +5,8 @@
     [Password] VARCHAR(50) NULL,
     [Email] VARCHAR(50) NOT NULL, 
     [MobileNumber] VARCHAR(50) NOT NULL, 
+    [OTPNumber] VARCHAR(50) NULL, 
+    [BrokerId] VARCHAR(50) NULL, 
     [CreatedDate] DATETIME NOT NULL,
     [CreatedBy] INT FOREIGN KEY REFERENCES [dbo].[Users](Id) NULL,
     [UserStatusId] INT FOREIGN KEY REFERENCES [dbo].[UserStatus](Id) NOT NULL,

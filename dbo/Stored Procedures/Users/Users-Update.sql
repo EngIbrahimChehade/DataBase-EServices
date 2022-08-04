@@ -1,10 +1,14 @@
 ﻿CREATE PROCEDURE [dbo].[Users-Update]
-    @Id INT,
-    @UserName VARCHAR(50),
+	@Id INT,
+	@UserName VARCHAR(50),
 	@Password VARCHAR(50),
 	@Email VARCHAR(50),
-    @MobileNumber VARCHAR(50),
-    @UserStatusId INT
+	@MobileNumber VARCHAR(50),
+	@OTPNumber VARCHAR(50),
+	@CreatedDate DateTime,
+	@CreatedBy INT,
+	@UserStatusId INT,
+    @BrokerId VARCHAR(50)
 AS
     UPDATE [dbo].[Users]
     SET 
@@ -12,6 +16,7 @@ AS
         [Password] = @Password,
         [Email] = @Email,
         [UserStatusId] = @UserStatusId,
-        [MobileNumber] = @MobileNumber
+        [MobileNumber] = @MobileNumber,
+        [OTPNumber] = @OTPNumber
     WHERE 
         [dbo].[Users].[Id] = @Id

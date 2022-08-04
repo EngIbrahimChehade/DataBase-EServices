@@ -4,9 +4,11 @@
 	@Password VARCHAR(50),
 	@Email VARCHAR(50),
 	@MobileNumber VARCHAR(50),
+	@OTPNumber VARCHAR(50),
 	@CreatedDate DateTime,
 	@CreatedBy INT,
-	@UserStatusId INT
+	@UserStatusId INT,
+	@BrokerId VARCHAR(50)
 AS
 	INSERT INTO [dbo].[Users] 
     (
@@ -16,7 +18,8 @@ AS
 		[MobileNumber],
 	    [CreatedDate],
 	    [CreatedBy],
-		[UserStatusId]
+		[UserStatusId],
+		[BrokerId]
     )
 	VALUES 
     (
@@ -26,7 +29,8 @@ AS
 		@MobileNumber,
 	    @CreatedDate,
 		@CreatedBy,
-		@UserStatusId
+		@UserStatusId,
+		@BrokerId
     );
 
 	SET @Id=SCOPE_IDENTITY()
