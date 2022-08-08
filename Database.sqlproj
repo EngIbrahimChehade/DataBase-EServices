@@ -68,6 +68,7 @@
     <Folder Include="dbo\Stored Procedures\Users" />
     <Folder Include="dbo\Stored Procedures\Users-Roles" />
     <Folder Include="dbo\Stored Procedures\UserStatus" />
+    <Folder Include="dbo\Stored Procedures\Attachments" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Roles.sql" />
@@ -99,6 +100,11 @@
     <Build Include="dbo\Stored Procedures\UserStatus\UserStatus-Insert.sql" />
     <Build Include="dbo\Stored Procedures\Users-Roles\Users-Roles-Delete.sql" />
     <Build Include="dbo\Stored Procedures\Users\Users-GetByUserNameAndOTP.sql" />
+    <Build Include="dbo\Tables\Attachments.sql" />
+    <Build Include="dbo\Stored Procedures\Attachments\Attachments-Delete.sql" />
+    <Build Include="dbo\Stored Procedures\Attachments\Attachments-Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Attachments\Attachments-Update.sql" />
+    <Build Include="dbo\Stored Procedures\Attachments\Attachments-GetById.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Script.PostDeployment.sql" />
