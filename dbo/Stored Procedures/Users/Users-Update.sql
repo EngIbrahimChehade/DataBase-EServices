@@ -8,7 +8,8 @@
 	@CreatedDate DateTime,
 	@CreatedBy INT,
 	@UserStatusId INT,
-    @BrokerId VARCHAR(50)
+    @BrokerId VARCHAR(50),
+    @BrokerCommission INT
 AS
     UPDATE [dbo].[Users]
     SET 

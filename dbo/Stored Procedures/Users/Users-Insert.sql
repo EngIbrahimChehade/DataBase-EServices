@@ -7,6 +7,7 @@
 	@OTPNumber VARCHAR(50),
 	@CreatedDate DateTime,
 	@CreatedBy INT,
+	@BrokerCommission INT,
 	@UserStatusId INT,
 	@BrokerId VARCHAR(50)
 AS
@@ -19,7 +20,8 @@ AS
 	    [CreatedDate],
 	    [CreatedBy],
 		[UserStatusId],
-		[BrokerId]
+		[BrokerId],
+		[BrokerCommission]
     )
 	VALUES 
     (
@@ -30,7 +32,8 @@ AS
 	    @CreatedDate,
 		@CreatedBy,
 		@UserStatusId,
-		@BrokerId
+		@BrokerId,
+		@BrokerCommission
     );
 
 	SET @Id=SCOPE_IDENTITY()
