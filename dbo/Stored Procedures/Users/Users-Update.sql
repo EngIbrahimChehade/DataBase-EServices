@@ -6,6 +6,7 @@
 	@MobileNumber VARCHAR(50),
 	@OTPNumber VARCHAR(50),
 	@CreatedDate DateTime,
+	@OTPDate DateTime,
 	@CreatedBy INT,
 	@UserStatusId INT,
     @BrokerId VARCHAR(50),
@@ -18,6 +19,7 @@ AS
         [Email] = @Email,
         [UserStatusId] = @UserStatusId,
         [MobileNumber] = @MobileNumber,
-        [OTPNumber] = @OTPNumber
+        [OTPNumber] = @OTPNumber,
+        [OTPDate] = @OTPDate
     WHERE 
         [dbo].[Users].[Id] = @Id

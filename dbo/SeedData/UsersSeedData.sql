@@ -4,5 +4,5 @@
 --GO
 
 --Start insert seed data
-INSERT INTO [dbo].[Users] ([UserName], [Password], [MobileNumber], [Email], [CreatedDate], [UserStatusId])
-VALUES ('admin', 'admin', '00966565696319', 'admin@Bupa.com.sa', GETUTCDATE(), 1);
+INSERT INTO [dbo].[Users] ([UserName], [Password], [MobileNumber], [Email], [BrokerId], [CreatedDate], [BrokerCommission], [UserStatusId])
+VALUES ('admin', 'admin', '0565696319', 'admin@Bupa.com.sa', 'COM0000083' ,GETUTCDATE(), '10', 1);

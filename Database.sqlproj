@@ -69,6 +69,8 @@
     <Folder Include="dbo\Stored Procedures\Users-Roles" />
     <Folder Include="dbo\Stored Procedures\UserStatus" />
     <Folder Include="dbo\Stored Procedures\Attachments" />
+    <Folder Include="dbo\Stored Procedures\Logs" />
+    <Folder Include="dbo\Stored Procedures\Opportunity-Quote" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Roles.sql" />
@@ -105,6 +107,12 @@
     <Build Include="dbo\Stored Procedures\Attachments\Attachments-Insert.sql" />
     <Build Include="dbo\Stored Procedures\Attachments\Attachments-Update.sql" />
     <Build Include="dbo\Stored Procedures\Attachments\Attachments-GetById.sql" />
+    <Build Include="dbo\Tables\Logs.sql" />
+    <Build Include="dbo\Stored Procedures\Logs\Logs-Get.sql" />
+    <Build Include="dbo\Stored Procedures\Logs\Logs-Insert.sql" />
+    <Build Include="dbo\Stored Procedures\Opportunity-Quote\Opportunity-Quote-GetById.sql" />
+    <Build Include="dbo\Stored Procedures\Opportunity-Quote\Opportunity-Quote-Insert.sql" />
+    <Build Include="dbo\Tables\Opportunity-Quote.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="dbo\Script.PostDeployment.sql" />
