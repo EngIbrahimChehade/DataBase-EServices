@@ -9,7 +9,7 @@
     [OTPNumber] VARCHAR(50) NULL,
     [OTPDate] DATETIME NULL,
     [BrokerId] VARCHAR(50) NULL, 
-    [CreatedDate] DATETIME NOT NULL,
+    [CreatedDate] DATETIME2 NOT NULL DEFAULT getdate(), 
     [BrokerCommission] Int NULL,
     [CreatedBy] INT FOREIGN KEY REFERENCES [dbo].[Users](Id) NULL,
     [UserStatusId] INT FOREIGN KEY REFERENCES [dbo].[UserStatus](Id) NOT NULL,
